@@ -1,6 +1,7 @@
 import "./App.css";
 import { WalletConnect } from "./components/WalletConnect";
 import { WalletProvider } from "./components/WalletProvider";
+import { StakingBalances } from "./components/StakingBalances";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
         </p>
 
         <WalletConnect />
+
+        <div className="w-full max-w-4xl mt-8">
+          <StakingBalances />
+        </div>
       </div>
     </WalletProvider>
   );
